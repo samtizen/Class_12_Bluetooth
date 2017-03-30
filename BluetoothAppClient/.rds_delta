@@ -1,0 +1,11 @@
+#delete
+#add
+#modify
+res/wgt/author-signature.xml
+res/wgt/signature1.xml
+res/wgt/css/client_style.css
+res/wgt/index.html
+res/wgt/js/bluetooth_client_main.js
+res/wgt/js/bluetooth_tizen_client_prot.js
+res/wgt/js/bluetooth_view_client_prot.js
+res/wgt/js/main.js

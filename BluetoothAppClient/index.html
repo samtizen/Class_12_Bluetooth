@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Tizen Mobile Web Basic Template" />
+
+    <title>Tizen Mobile Web Basic Application</title>
+    <link rel="stylesheet" href="lib/tau/mobile/theme/default/tau.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/client_style.css" />
+</head>
+
+<body>
+    <div class="ui-page ui-page-active" id="bluetooth-main">
+        <div class="ui-header">
+            <h1>Bluetooth Messager - Client</h1>
+        </div>
+        <div class="ui-content">
+			<div id="chat-window">
+				
+			</div>
+		</div>
+        <div class="ui-footer" style="background-color:rgba(46, 139, 153, 1)">
+        	<div style="text-align:left;">
+        		<label style="color:white; font-size:16px;">Type your message</label>
+        		<textarea id="txt-message"></textarea>
+        	</div>
+        	<div class="row-grid">
+                <div class="col-grid-3" style="text-align:center">
+                    <a href="#" class="icon-settings icon-active" id="btn-settings"></a>
+                    <div class="ui-footer-btn-text" style="margin-top:-5px;">Settings</div>
+                </div>
+                <div class="col-grid-3" style="text-align:center;">
+
+                </div>
+                <div class="col-grid-3" style="text-align:center;">
+                	<a href="#" class="icon-send icon-active" id="btn-send-msg"></a>
+                    <div class="ui-footer-btn-text" style="margin-top:-5px;">Send</div>
+                </div>
+            </div>
+     
+        </div>
+
+    </div>
+    <div class="ui-page" id="bluetooth-settings">
+        <div class="ui-header">
+            <h1>Settings</h1>
+        </div>
+        <div class="ui-content">
+            <div class="ui-header">
+                <h1>Bluetooth Client</h1>
+            </div>
+            <div style="margin-top:10px;">
+               	<div class="ui-settings-field-block">
+	            	<label>My Nickname</label>
+					<input id="txt-nickname" type="text" placeholder="Enter Your Nickname">
+				</div>
+   				<div class="ui-settings-field-block">
+	            	<label>My Address</label>
+					<input id="txt-my-address" type="text" placeholder="Click button below to get adapter">
+					<button id="btn-get-adapter">Get Adapter</button>
+					<div id="div-my-address-status" class="ui-settings-status">No Adapter</div>
+				</div>
+				<div class="ui-settings-field-block">
+					<label>Service Address</label>
+					<input id="txt-service-address" type="text" placeholder="Click button below to bond">
+					<button id="btn-bond-devices">Bond Devices</button>
+					<div id="div-service-address-status" class="ui-settings-status">No Bond</div>
+				</div>
+				<div class="ui-settings-field-block">
+					<label>Service Id</label>
+					<input id="txt-service-id" type="text" placeholder="Click button below to connect to service">
+					<button id="btn-connect-service">Connect To Service</button>
+					<div id="div-service-id-status" class="ui-settings-status">No Connection</div>
+				</div>
+				
+            	<!-- <button id="btn-send-message">Send Message</button>-->
+            </div>
+        </div>
+        <div class="ui-footer" style="background-color:rgba(46, 139, 153, 1)">
+        	<div class="row-grid">
+                <div class="col-grid-3" style="text-align:center">
+                    <a href="#" class="icon-back icon-active" id="btn-back-main-settings"></a>
+                    <div class="ui-footer-btn-text" style="margin-top:-5px;">Back</div>
+                </div>
+                <div class="col-grid-3" style="text-align:center;">
+
+                </div>
+                <div class="col-grid-3" style="text-align:center;">
+                	<a href="#" class="icon-save icon-active" id="btn-save-settings"></a>
+                    <div class="ui-footer-btn-text" style="margin-top:-5px;">Save</div>
+                </div>
+        	</div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="lib/tau/mobile/js/tau.js"></script>
+    <script type="text/javascript" src="lib/jquery.js"></script>
+    <script type="text/javascript" src="js/bluetooth_view_client_prot.js"></script>
+    <script type="text/javascript" src="js/bluetooth_tizen_client_prot.js"></script>
+    <script type="text/javascript" src="js/bluetooth_client_main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
